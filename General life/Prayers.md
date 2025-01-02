@@ -1,0 +1,5 @@
+- [ ] Fajr فجر
+- [ ] Dohr ظهر
+- [x] Asr عصر
+- [x] Maghreb مغرب
+- [x] Eshaa عشاء
