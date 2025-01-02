@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"35a4dd40627ca3ff","x":434,"y":440,"width":226,"height":320,"type":"file","file":"General life/My life.md"},
+		{"id":"a7ed4d58d7f0b0d1","x":740,"y":180,"width":220,"height":60,"type":"file","file":"General life/religion.md"},
+		{"id":"63a5b63638708b37","x":1001,"y":100,"width":219,"height":57,"type":"file","file":"General life/Prayers.md"},
+		{"id":"e6628e5eb2ad5df6","x":1018,"y":260,"width":202,"height":50,"type":"file","file":"General life/quran.md"},
+		{"id":"e5a8921b1a31257d","x":770,"y":1080,"width":341,"height":60,"type":"file","file":"Self improvement/Self improvement.md"},
+		{"id":"9bd3c630379d1ee9","x":1204,"y":916,"width":256,"height":64,"type":"file","file":"Self improvement/Year goals.md"},
+		{"id":"caf33dad99deef6e","x":1230,"y":1020,"width":290,"height":60,"type":"file","file":"Self improvement/Month goals.md"},
+		{"id":"6e26facf2bbe87d4","x":1224,"y":1180,"width":296,"height":60,"type":"file","file":"Self improvement/Weak goals.md"},
+		{"id":"a13545cb1a858591","x":1195,"y":1340,"width":325,"height":60,"type":"file","file":"Self improvement/Today tasks.md"},
+		{"id":"1f9e2471c824eb0c","x":1090,"y":1980,"width":370,"height":60,"type":"file","file":"Self improvement/Tracking time.md"},
+		{"id":"88d268c5558dece2","x":1530,"y":1980,"width":250,"height":60,"type":"file","file":"25/Year 2025.md"},
+		{"id":"1eaef6e14423aa3c","x":1860,"y":1980,"width":320,"height":60,"type":"file","file":"25/01/Month 01-2025.md"},
+		{"id":"3683c0b05d66e9b8","x":2193,"y":1460,"width":687,"height":240,"type":"file","file":"25/01/01.md"},
+		{"id":"a34d14949c35a646","x":2246,"y":1740,"width":694,"height":240,"type":"file","file":"25/01/02.md"}
+	],
+	"edges":[
+		{"id":"891eb4ecd7fea348","fromNode":"35a4dd40627ca3ff","fromSide":"right","toNode":"a7ed4d58d7f0b0d1","toSide":"left"},
+		{"id":"ff2b6fb2d8f1ffbb","fromNode":"a7ed4d58d7f0b0d1","fromSide":"right","toNode":"63a5b63638708b37","toSide":"left"},
+		{"id":"b1ffdec51b4556ab","fromNode":"a7ed4d58d7f0b0d1","fromSide":"right","toNode":"e6628e5eb2ad5df6","toSide":"left"},
+		{"id":"3a308e7fd683e898","fromNode":"35a4dd40627ca3ff","fromSide":"right","toNode":"e5a8921b1a31257d","toSide":"left"},
+		{"id":"7dbd33e556dabee0","fromNode":"e5a8921b1a31257d","fromSide":"right","toNode":"9bd3c630379d1ee9","toSide":"left"},
+		{"id":"d31c68eb253e07ea","fromNode":"e5a8921b1a31257d","fromSide":"right","toNode":"caf33dad99deef6e","toSide":"left"},
+		{"id":"ab1708245fbadd9d","fromNode":"e5a8921b1a31257d","fromSide":"right","toNode":"6e26facf2bbe87d4","toSide":"left"},
+		{"id":"126d9641a44dea99","fromNode":"e5a8921b1a31257d","fromSide":"right","toNode":"a13545cb1a858591","toSide":"left"},
+		{"id":"6fc4cba909640b60","fromNode":"e5a8921b1a31257d","fromSide":"right","toNode":"1f9e2471c824eb0c","toSide":"left"},
+		{"id":"9a801a7278a6ef9d","fromNode":"1f9e2471c824eb0c","fromSide":"right","toNode":"88d268c5558dece2","toSide":"left"},
+		{"id":"7d022aadc8f352bd","fromNode":"88d268c5558dece2","fromSide":"right","toNode":"1eaef6e14423aa3c","toSide":"left"},
+		{"id":"81fad7818de158fc","fromNode":"1eaef6e14423aa3c","fromSide":"right","toNode":"3683c0b05d66e9b8","toSide":"left"},
+		{"id":"30075eb40f5e4806","fromNode":"1eaef6e14423aa3c","fromSide":"right","toNode":"a34d14949c35a646","toSide":"left"}
+	]
+}
