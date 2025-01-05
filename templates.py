@@ -1,7 +1,7 @@
- 
+day_empty_data = f""" 
 # Total
-> Total points : 0/14
-> Chart : [              ]
+> Total points :
+> chart : [ ]
  
 # Studying 1
 - [ ] task : 1
@@ -29,4 +29,4 @@
 # Another tasks
 - [ ] No fap : 5
 - [ ] Sleap 8 hours : 3
- 
+ """
