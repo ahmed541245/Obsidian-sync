@@ -12,7 +12,7 @@ def loop_folder(folder_path, func):
 
 
 def update_file(file_path, new_data):
-  with open(file_path, "w") as f:
+  with open(file_path, "w", encoding="UTF-8") as f:
     f.write(new_data)
 
 
