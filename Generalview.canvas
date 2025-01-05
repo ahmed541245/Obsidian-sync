@@ -12,8 +12,8 @@
 		{"id":"1f9e2471c824eb0c","type":"file","file":"Self improvement/Tracking time.md","x":1090,"y":1980,"width":370,"height":60},
 		{"id":"88d268c5558dece2","type":"file","file":"25/Year 2025.md","x":1530,"y":1980,"width":250,"height":60},
 		{"id":"1eaef6e14423aa3c","type":"file","file":"25/01/Month 01-2025.md","x":1860,"y":1980,"width":320,"height":60},
-		{"id":"3683c0b05d66e9b8","type":"file","file":"25/01/01.md","x":2193,"y":1460,"width":687,"height":240},
-		{"id":"a34d14949c35a646","type":"file","file":"25/01/02.md","x":2246,"y":1740,"width":794,"height":240}
+		{"id":"3683c0b05d66e9b8","type":"file","file":"25/01/01.md","x":2246,"y":740,"width":794,"height":240},
+		{"id":"a34d14949c35a646","type":"file","file":"25/01/02.md","x":2246,"y":1020,"width":794,"height":240}
 	],
 	"edges":[
 		{"id":"891eb4ecd7fea348","fromNode":"35a4dd40627ca3ff","fromSide":"right","toNode":"a7ed4d58d7f0b0d1","toSide":"left"},
