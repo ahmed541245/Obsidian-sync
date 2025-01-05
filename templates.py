@@ -1,23 +1,24 @@
 day_empty_data = f""" 
 # Total
-> Total points :
-> chart : [ ]
+> Total points : 0/0
+> Chart : []
+ 
  
 # Studying 1
-- [ ] task : 1
+- [ ] std1 : 1
  
 # Studying 2 
-- [ ] task : 1
+- [ ] std2 : 1
  
 # Programming 1 
-- [ ] task : 1
+- [ ] pr1 : 1
  
 # Programming 2 : 1
-- [ ] task
-- [ ] task2 : 2
+- [ ] pr2
+- [ ] pr2-d : 2
  
 # Reading : 1
-- [ ] task
+- [ ] read
  
 # Prayers : 2
 - [ ] Fajr فجر
