@@ -1,7 +1,7 @@
-# add code for the last 10 days
+	# add code for the last 10 days
 import os
 import templates
-from chart import make_chart_for_day
+from chart import *
 
 def loop_folder(folder_path, func):
   for root, dirs, files in os.walk(folder_path):
@@ -56,14 +56,17 @@ def edite_total_and_chart_2_day(md_data: str, date):
   unicode = '\u00A0'
   all_lines[
       chart_line_index] = f"> Chart : [{'='*total_score}{unicode*(max_score-total_score)}]"
-  pngname = make_chart_for_day (date, total_score, max_score)
+  try :
+    pngname = make_chart_for_day_mat (date, total_score, max_score)
+  except :
+    pngname = make_chart_for_day_ly (date, total_score, max_score)
   all_lines [chart_line_index + 1] = f"![[{pngname}]]"
   return "\n".join(all_lines)
 
 
 def add_md_2_day(date="25/01/02"):
   path = f"./{date}.md"
-  md_data = edite_total_and_chart_2_day(templates.day_empty_data)
+  md_data = edite_total_and_chart_2_day(templates.day_empty_data, date)
   update_file(path, md_data)
 
 def update_md_day (date = "25/01/02"):
@@ -73,19 +76,19 @@ def update_md_day (date = "25/01/02"):
   old_data.close()
   update_file (path, new_data)
 
-print ("if you wanna close the app, pls type 'e' in any input")
+print ("if you wanna close the app, pls type 'e' in any input\n")
 while True :
-  file_date = input ("Enter the date of the file you want to manage, or l for the last or a for all (YY/MM/DD, a, l)")
+  file_date = input ("Enter the date of the file you want to manage, or l for the last or a for all (YY/MM/DD, a, l) : ")
   if file_date == "e":
     break
   elif file_date in ["l", "a"]:
     folder_path = "./25"
     folders = sorted(os.listdir(folder_path))
     if file_date == "l":
-      last_month = files[-1]
+      last_month = folders[-2]
       last_month_path = os.path.join (folder_path, last_month)
       days = sorted([f for f in os.listdir(last_month_path) if os.path.isfile(os.path.join(last_month_path, f))])
-      last_day_date = "/".join(os.path.join (last_month_path, days[-1]).__str__().split("/")[-3:]).split(".")[0]
+      last_day_date = "/".join(os.path.join (last_month_path, days[-2]).__str__().split("/")[-3:]).split(".")[0]
 
       date = last_day_date
   else :
