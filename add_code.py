@@ -73,4 +73,34 @@ def update_md_day (date = "25/01/02"):
   old_data.close()
   update_file (path, new_data)
 
-update_md_day ("25/01/05")
+print ("if you wanna close the app, pls type 'e' in any input")
+while True :
+  file_date = input ("Enter the date of the file you want to manage, or l for the last or a for all (YY/MM/DD, a, l)")
+  if file_date == "e":
+    break
+  elif file_date in ["l", "a"]:
+    folder_path = "./25"
+    folders = sorted(os.listdir(folder_path))
+    if file_date == "l":
+      last_month = files[-1]
+      last_month_path = os.path.join (folder_path, last_month)
+      days = sorted([f for f in os.listdir(last_month_path) if os.path.isfile(os.path.join(last_month_path, f))])
+      last_day_date = "/".join(os.path.join (last_month_path, days[-1]).__str__().split("/")[-3:]).split(".")[0]
+
+      date = last_day_date
+  else :
+    if os.path.isfile ("./"+file_date):
+      date = file_date
+    else :
+      print ("your input is incorrect or this day date is not exit pls retry again")
+      continue
+  add_or_update = input ("What do you want, add md to file or update file (a, u) : ")
+  if add_or_update == "e":
+    break
+  elif add_or_update == "a":
+    add_md_2_day (date)
+  elif add_or_update == "u":
+    update_md_day(date)
+  else :
+    print ("your input is shit pls try again")
+
